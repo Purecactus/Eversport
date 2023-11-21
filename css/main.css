@@ -17,19 +17,20 @@ body {
     flex-direction: row;
     background-color: lightgrey;
     height: 50px;
-    justify-content: space-evenly;
-    align-items: center;
-    column-gap: 0;
+    padding: ;
 }
 
 .sport-button{
-    width: auto;
+    width: 100%;
     border-right: solid 1px black;
+    display: grid;
+        height: 100%;
 }
 
 .sport-link{
     height: 100%;
     width: 100%;
+    
 }
 
 @media only screen and (max-width: 500px){
