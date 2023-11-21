@@ -43,3 +43,9 @@ body {
         display: none;
     }
 }
+
+a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
