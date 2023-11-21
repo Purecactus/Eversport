@@ -1,0 +1,45 @@
+/* HEADER */
+body {
+    margin: 0;
+}
+
+.black-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: grey;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+.gray-section{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 0;
+}
+
+.sport-button{
+    width: auto;
+    border-right: solid 1px black;
+}
+
+.sport-link{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px){
+    .searchbar{
+        display: none;
+    }
+    h1{
+        display: none;
+    }
+    .gray-section{
+        display: none;
+    }
+}
