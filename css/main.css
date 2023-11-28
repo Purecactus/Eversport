@@ -115,7 +115,7 @@ a{
 .landing-img{
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0rem 2rem 0rem 2rem;
+    margin: 0rem 1rem 0rem 1rem;
     row-gap: 2rem;
 }
 
@@ -123,6 +123,14 @@ a{
     width: 100%;
 }
 
-#viktor2{
+#landing-page-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0rem 1rem 0rem 1rem;
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+.racket{
     width: 100%;
 }
