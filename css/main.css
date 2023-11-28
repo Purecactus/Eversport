@@ -76,6 +76,11 @@ body {
     display: none;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1200px){
     .searchbar{
         display: none;
@@ -106,16 +111,31 @@ body {
         display: none;
     }
 }
+/* END HEADER */
 
-a{
-    color: black;
-    text-decoration: none;
+/* LANDING PAGE */
+main{
+    background-color: #424952;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+}
+
+.landing-page{
+    margin: 0rem 15rem 0rem 15rem;
 }
 
 .landing-img{
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0rem 1rem 0rem 1rem;
+    margin: 0rem 2rem 0rem 2rem;
     row-gap: 2rem;
 }
 
@@ -125,12 +145,98 @@ a{
 
 #landing-page-products{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 0rem 1rem 0rem 1rem;
-    row-gap: 2rem;
+    row-gap: 1rem;
     column-gap: 2rem;
+    justify-items: center;
 }
-.racket{
+
+.product{
+    width: 80%;
+}
+
+.racket-name1{
     width: 100%;
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
 }
+
+.racket-name2{
+    width: 100%;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+}
+
+.racket-name3{
+    width: 100%;
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+}
+
+.racket-name4{
+    width: 100%;
+    grid-column: 4;
+    grid-row: 2;
+    text-align: center;
+}
+
+.racket-name5{
+    width: 100%;
+    grid-column: 5;
+    grid-row: 2;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px){
+    .landing-page{
+        margin: 0rem 5rem 0rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .landing-page{
+        margin: 0rem 0rem 0rem 0rem;
+    }
+}
+/* END LANDING PAGE */
+
+/* FOOTER */
+footer{
+    background-color: black;
+    height: 500px;
+}
+
+#footer-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#footer-info{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.footer-text{
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: underline;
+}
+
+#logo-footer{
+    grid-column: 3;
+    width: 20rem;
+}
+
+#legal-footer{
+    grid-column: 2;
+    width: 20rem;
+}
+/*END FOOTER */
