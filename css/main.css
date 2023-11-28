@@ -7,30 +7,79 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: grey;
-    height: 100px;
+    background-color: black;
+    height: 70px;
     justify-content: space-evenly;
 }
 
-.gray-section{
+@font-face {
+    font-family: 'soloist';
+    font-style: normal;
+    src: url(soloist1.ttf) format(ttf);
+}
+
+.main-link{
+    color: white;
+    font-family: soloist;
+    font-size: 2rem;
+}
+
+.searchbar{
+    height: 30px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.search{
     display: flex;
-    flex-direction: row;
-    background-color: lightgrey;
-    height: 50px;
-    padding: ;
+    align-items: center;
+}
+
+#search-icon{
+    margin-right: 10px;
+}
+
+.gray-section{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    text-align: center;
+    background-color: #d9d9d9;
+    height: 30px;
 }
 
 .sport-button{
-    width: 100%;
-    border-right: solid 1px black;
+    width: auto;
+    border-right: solid 0.5px black;
+    border-left: solid 0.5px black;
+    height: 100%;
     display: grid;
-        height: 100%;
 }
 
 .sport-link{
     height: 100%;
     width: 100%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.icon{
+    height: 30px;
+}
+
+.logo{
+    display: none;
+}
+
+#hamburger{
+    display: none;
+}
+
+@media only screen and (max-width: 1200px){
+    .searchbar{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 500px){
@@ -43,10 +92,22 @@ body {
     .gray-section{
         display: none;
     }
+
+    .logo{
+        height: 50px;
+        display: block;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+    .main-link{
+        display: none;
+    }
 }
 
 a{
     color: black;
     text-decoration: none;
-    text-align: center;
 }
