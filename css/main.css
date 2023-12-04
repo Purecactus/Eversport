@@ -157,7 +157,7 @@ h1{
 .wavy{
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%) scale(1);
     -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.1));
 }
@@ -209,6 +209,30 @@ h1{
     font-size: 0.9rem;
 }
 
+.shop-products{
+    display: none;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.shop-rackets,.shop-football{
+    display: none;
+    font-size: 2.5rem;
+    color: #d9d9d9;
+}
+
+.shop-football{
+    position: absolute;
+    top: 92%;
+    left: 35%;
+}
+
+.shop-rackets{
+    position: absolute;
+    top: 153.5%;
+    left: 5%;
+}
+
 @media only screen and (max-width: 1200px){
     .landing-page{
         margin: 0rem 5rem 0rem 5rem;
@@ -216,8 +240,36 @@ h1{
 }
 
 @media only screen and (max-width: 500px){
+    main{
+        padding: 0rem 0rem 2rem 0rem;
+    }
+    
     .landing-page{
         margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .landing-img{
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    #viktor{
+        padding-bottom: 1rem;
+    }
+
+    .wavy span{
+        display: none;
+    }
+
+    .product-section{
+        display: none;
+    }
+
+    .shop-products{
+        display: block;
+    }
+
+    .shop-rackets,.shop-football{
+        display: block;
     }
 }
 /* END LANDING PAGE */
@@ -244,16 +296,41 @@ footer{
 .footer-text{
     font-size: 1.8rem;
     color: white;
-    text-decoration: underline;
-}
-
-#logo-footer{
-    grid-column: 3;
-    width: 20rem;
+    text-decoration: underline; 
 }
 
 #legal-footer{
     grid-column: 2;
-    width: 20rem;
+    width: 20rem; 
+}
+
+#logo-footer{
+    grid-column: 3;
+    width: 20rem; 
+}
+
+@media only screen and (max-width: 500px){
+    footer{
+        background-color: black;
+        height: 800px; 
+    }
+    
+    #footer-container{
+        grid-template-columns: 1fr; 
+    }
+    
+    .footer-text{
+        font-size: 1.5rem; 
+    }
+    
+    #legal-footer{
+        grid-column: 1; 
+        width: 15rem; 
+    }
+
+    #logo-footer{
+        grid-column: 1;
+        width: 10rem;
+    }
 }
 /*END FOOTER */

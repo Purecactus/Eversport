@@ -45,7 +45,13 @@
     <main>
         <div class="landing-page">
             <div class="landing-img">
-                <img id="viktor" src="img/main-img.jpg" alt="Viktor Axelsen">
+                <picture>
+                    <source
+                        srcset="/img/psg.webp"
+                        media="(max-width: 500px)"
+                        >
+                    <img id="viktor" src="img/main-img.jpg" alt="Viktor Axelsen">
+                </picture>
                 <div class="wavy">
                     <span class="letter" style="--i:1;">A</span>
                     <span class="letter" style="--i:2;">X</span>
@@ -82,9 +88,7 @@
                         <p class="product-name">Yonex astrox 99</p>
                         <p class="price-tag">239$</p>
                     </div>
-                    
                 </div>
-
                 <h1>Football</h1>
                 <div class="product-section">
                     <div>
@@ -113,10 +117,17 @@
                         <p class="price-tag">80$</p>
                     </div>
                 </div>
+                <a href="#">
+                    <img class="shop-products" src="img/shop-football.webp" alt="picture of football products">
+                    <p class="shop-football">Shop football</p>
+                </a>
+                <a href="badminton.html">
+                    <img class="shop-products" src="img/shop-rackets.jpg" alt="picture of a racket">
+                    <p class="shop-rackets">Shop rackets</p>
+                </a>
             </div>
         </div>
     </main>
-
     <footer>
         <div id="footer-container">
             <img id="legal-footer" src="img/legal-stuff.svg" alt="legal-stuff">
