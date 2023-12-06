@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+header{
+    position: fixed;
+    width: 100%;
+}
+
 .black-section{
     display: flex;
     flex-direction: row;
@@ -25,9 +30,11 @@ body {
 }
 
 .searchbar{
-    height: 30px;
+    height: 35px;
     width: 400px;
-    border-radius: 5px;
+    border-radius: 7px;
+    padding-left: 0.5rem;
+    border: none;
 }
 
 .search{
@@ -71,6 +78,10 @@ body {
 
 .icon{
     height: 30px;
+}
+
+.icon:hover{
+    opacity: 70%;
 }
 
 .logo{
@@ -121,7 +132,7 @@ a{
 /* LANDING PAGE */
 main{
     background-color: #424952;
-    padding: 0rem 15rem 5rem 15rem;
+    padding: 5rem 15rem 5rem 15rem;
 }
 
 p{
@@ -148,31 +159,6 @@ h1{
     padding-bottom: 3rem;
 }
 
-.letter{
-    margin: 0;
-    padding: 0;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-
-.wavy{
-    position: absolute;
-    top: 25%;
-    left: 35%;
-    transform: translate(-50%, -50%) scale(1);
-    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.1));
-}
-
-.wavy span{
-    position: relative;
-    display: inline-block;
-    color: white;
-    font-size: 8em;
-    text-transform: uppercase;
-    animation: animate 4s ease-in-out infinite;
-    animation-delay: calc(0.1s * var(--i));
-}
-
 @keyframes animate{
     0%{
         transform: translateY(0px);
@@ -196,6 +182,11 @@ h1{
 .product{
     width: 80%;
     border-radius: 0.7rem;
+}
+
+.product:hover{
+    transform: scale(105%);
+    transition: ease-in-out 0.1s;
 }
 
 .product-name{
@@ -225,7 +216,8 @@ h1{
 .shop-football{
     position: absolute;
     top: 92%;
-    left: 35%;
+    left: 30%;
+    width: 100%;
 }
 
 .shop-rackets{
@@ -237,6 +229,10 @@ h1{
 @media only screen and (max-width: 1200px){
     .landing-page{
         margin: 0rem 5rem 0rem 5rem;
+    }
+
+    main{
+        padding: 0;
     }
 }
 

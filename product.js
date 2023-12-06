@@ -17,3 +17,15 @@ function clickTap(){
     buttonChange.style.display = "none"
     showSpecs.style.display = "block"
 }
+
+// Cart popup
+const popupElement = document.getElementById("popup1");
+const cartButton = document.getElementById("cart-button");
+cartButton.addEventListener("click", popupFunction);
+
+function popupFunction(){
+    popupElement.style.visibility = "visible";
+    setTimeout(function() {
+        popupElement.style.visibility = "hidden";
+    }, 2000);
+}
