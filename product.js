@@ -19,8 +19,11 @@ function clickTap(){
 }
 
 // Cart popup
+
+
 const popupElement = document.getElementById("popup1");
 const cartButton = document.getElementById("cart-button");
+const cartImage = document.getElementById("cart-img")
 cartButton.addEventListener("click", popupFunction);
 
 function popupFunction(){
@@ -28,4 +31,6 @@ function popupFunction(){
     setTimeout(function() {
         popupElement.style.visibility = "hidden";
     }, 2000);
+
+    cartImage.src = "img/cart2.svg"
 }

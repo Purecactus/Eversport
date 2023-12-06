@@ -1,0 +1,108 @@
+/* HEADER */
+body {
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.gray-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: gray;
+    height: 70px;
+}
+
+@font-face {
+    font-family: 'soloist';
+    font-style: normal;
+    src: url(soloist1.ttf) format(ttf);
+}
+
+.main-link{
+    color: white;
+    font-family: soloist;
+    font-size: 2rem;
+    margin: 0rem 5rem 0rem 5rem;
+    text-decoration: none;
+}
+
+.icon{
+    height: 30px;
+}
+
+.icon:hover{
+    opacity: 70%;
+}
+/* END HEADER */
+
+
+/* CHECK-OUT PAGE */
+.hola{
+    height: 800px;
+}
+/* END OF CHECK-OUT PAGE */
+
+/* FOOTER */
+footer{
+    background-color: black;
+    height: 500px;
+}
+
+#footer-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#footer-info{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.footer-text{
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: underline; 
+}
+
+#legal-footer{
+    grid-column: 2;
+    width: 20rem; 
+}
+
+#logo-footer{
+    grid-column: 3;
+    width: 20rem; 
+}
+
+@media only screen and (max-width: 500px){
+    footer{
+        background-color: black;
+        height: 800px; 
+    }
+    
+    #footer-container{
+        grid-template-columns: 1fr; 
+    }
+    
+    .footer-text{
+        font-size: 1.5rem; 
+    }
+    
+    #legal-footer{
+        grid-column: 1; 
+        width: 15rem; 
+    }
+
+    #logo-footer{
+        grid-column: 1;
+        width: 10rem;
+    }
+}
+/*END FOOTER */
