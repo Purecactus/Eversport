@@ -72,3 +72,45 @@ h3{
 #category-shoes{
     background-color: darkgray;
 }
+
+@media only screen and (max-width: 500px){
+    .racket-page{
+        grid-template-columns: 1fr 4fr;
+        column-gap: 1rem;
+        padding-top: 3rem;
+    }
+    
+    .categories{
+        padding: 1rem 1rem 0rem 1rem;
+        height: 30%;
+        row-gap: 1rem;
+        column-gap: 0.5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .product-section{
+        grid-template-columns: 1fr 1fr;
+        margin: 0rem 1rem 0rem 0rem;
+        row-gap: 1rem;
+        column-gap: 1rem;
+    }
+
+    .category-item {
+        border-radius: 20px;
+        height: 40%;
+        font-size: 15px;
+        font-weight: 150;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .products-filter{
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    h2{
+        padding-top: 2rem;
+    }
+    .filter-button{
+        margin-left: 1rem;
+    }
+}

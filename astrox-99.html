@@ -8,9 +8,36 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/product.css">
     <script src="product.js" defer></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
+    <section id="sidebar-menu-id">
+        <div class="sidebar-header">
+            <h2 id="categories-header">Categories</h2>
+            <img id="sidebar-close-button" class="icon" src="img/close-icon.svg" alt="Close button">
+        </div>
+        <div class="hamburger-gray-section">
+            <div class="hamburger-sport-button">
+                <a href="football.html" class="hamburger-sport-link">Football</a>
+            </div>
+            <div class="hamburger-sport-button">
+                <a href="badminton.html" class="hamburger-sport-link">Badminton</a>
+            </div>
+            <div class="hamburger-sport-button">
+                <a href="tennis.html" class="hamburger-sport-link">Tennis</a>
+            </div>
+            <div class="hamburger-sport-button">
+                <a href="padel.html" class="hamburger-sport-link">Padel</a>
+            </div>
+            <div class="hamburger-sport-button">
+                <a href="golf.html" class="hamburger-sport-link">Golf</a>
+            </div>
+            <div class="hamburger-sport-button">
+                <a href="discgolf.html" class="hamburger-sport-link">Discgolf</a>
+            </div>
+        </div>
+    </section>
     <header>
         <section class="header">
             <div class="black-section">
@@ -21,7 +48,9 @@
                     <img class="icon" id="search-icon" src="img/search.svg" alt="search">
                     <input class="searchbar" type="Search" placeholder="Search...">
                 </div>
-                <img class="icon" id="cart-img" src="img/cart.svg" alt="cart">
+                <a href="check-out.html">
+                    <img class="icon" id="cart-img" src="img/cart.svg" alt="cart">
+                </a>
                 <img class="icon" src="img/profile.svg" alt="profile">
             </div>
             <div class="gray-section">
@@ -97,31 +126,31 @@
         </section>
         <h1>You may also like</h1>
         <div class="product-section">
-            <div>
+            <a href="#">
                 <img class="product" src="img/football-boot.jpg" alt="Football boot">
-                <p class="product-name">Nike Mercurial Superfly VIII Pro</p>
+                <p class="product-name">Nike Mercurial Superfly Pro</p>
                 <p class="price-tag">80$</p>
-            </div>
-            <div>
-                <img class="product" src="img/football-boot.jpg" alt="Football boot">
-                <p class="product-name">Nike Mercurial Superfly VIII Pro</p>
-                <p class="price-tag">80$</p>
-            </div>
-            <div>
-                <img class="product" src="img/football-boot.jpg" alt="Football boot">
-                <p class="product-name">Nike Mercurial Superfly VIII Pro</p>
-                <p class="price-tag">80$</p>
-            </div>
-            <div>
-                <img class="product" src="img/football-boot.jpg" alt="Football boot">
-                <p class="product-name">Nike Mercurial Superfly VIII Pro</p>
-                <p class="price-tag">80$</p>
-            </div>
-            <div>
-                <img class="product" src="img/football-boot.jpg" alt="Football boot">
-                <p class="product-name">Nike Mercurial Superfly VIII Pro</p>
-                <p class="price-tag">80$</p>
-            </div>
+            </a>
+            <a href="#">
+                <img class="product" src="img/superfly.jpg" alt="Football boot">
+                <p class="product-name">Nike Superfly 8 Elite</p>
+                <p class="price-tag">129$</p>
+            </a>
+            <a href="#">
+                <img class="product" src="img/vapor.webp" alt="Football boot">
+                <p class="product-name">Nike Mercurial Vapor 15</p>
+                <p class="price-tag">115$</p>
+            </a>
+            <a href="#">
+                <img class="product" src="img/nanoflare-800.webp" alt="Racket">
+                <p class="product-name">Yonex Nanoflare 800 Pro</p>
+                <p class="price-tag">190$</p>
+            </a>
+            <a href="#">
+                <img class="product" src="img/duora-10.webp" alt="Racket">
+                <p class="product-name">Yonex Duora 10</p>
+                <p class="price-tag">650$</p>
+            </a>
         </div>
     </main>
 </body>

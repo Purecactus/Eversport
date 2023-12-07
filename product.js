@@ -30,7 +30,8 @@ function popupFunction(){
     popupElement.style.visibility = "visible";
     setTimeout(function() {
         popupElement.style.visibility = "hidden";
-    }, 2000);
+    }, 2500);
 
     cartImage.src = "img/cart2.svg"
 }
+

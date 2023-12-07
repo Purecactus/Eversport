@@ -60,3 +60,37 @@ h3{
     row-gap: 5rem;
     column-gap: 2rem;
 }
+
+@media only screen and (max-width: 500px){
+    .categories {
+        padding: 5vh 1rem 5vh 1rem;
+        row-gap: 3rem;
+        column-gap: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .category-section{
+        grid-template-columns: 1fr 1fr;
+        margin: 0rem 2rem 0rem 2rem;
+        row-gap: 1rem;
+    }
+
+    .category-item {
+        border-radius: 20px;
+        height: 100%;
+        font-size: 15px;
+        font-weight: 150;
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+
+    .products-filter{
+        margin: 0rem 2rem 0rem 2rem;
+    }
+
+    h2{
+        padding-top: 2rem;
+    }
+    .filter-button{
+        margin-left: 1rem;
+    }
+}
