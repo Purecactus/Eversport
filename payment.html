@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/check-out.css">
+    <link rel="stylesheet" href="css/payment.css">
 </head>
+
 <body>
     <header>
         <section class="header">
@@ -16,22 +18,20 @@
         </section>
     </header>
 
-    <main>
+    <main id="main-id">
         <section class="check-out-section">
             <div class="left-column">
-                <div class="product">
-                    <img class="product-img" src="img/Astrox-99.webp" alt="astrox 99 racket">
-                    <div class="product-info">
-                        <h3 class="product-name">Yonex Astrox 99 Pro</h3>
-                        <p class="size">Size: Onesize</p>
-                        <p class="price-tag">239$</p>
-                    </div>
-                    <div class="counter">
-                        <p class="minus">-</p>
-                        <div>3</div>
-                        <p class="plus">+</p>
+                <div class="delivery-ops">
+                    <div class="delivery-input-section">
+                        <h3>Adress</h3>
+                        <input placeholder="Adress" type="text" name="adress" class="delivery-input">
+                        <h3>Postal Code</h3>
+                        <input placeholder="Postal Code" type="text" name="adress" class="delivery-input">
+                        <h3>Phone</h3>
+                        <input placeholder="Phone" type="text" name="adress" class="delivery-input">
                     </div>
                 </div>
+                <div class="payment-ops"></div>
                 <div class="info-box">
                     <div class="legal-stuff-box">
                         <div class="legal-stuff-info">
@@ -47,7 +47,7 @@
                     <div>
                         <p>Part total: xxx</p>
                         <p>Shipping cost: xxx</p>
-                        <h3>Total: xxx</h3>
+                        <h3 id="total">Total: xxx</h3>
                         <a href="payment.html">
                             <button id="product-info" type="button">Proceed</button>
                         </a>
@@ -74,4 +74,5 @@
         </div>
     </footer>
 </body>
+
 </html>
