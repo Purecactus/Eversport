@@ -31,14 +31,38 @@
                         <input placeholder="Phone" type="text" name="adress" class="delivery-input">
                     </div>
                 </div>
-                <div class="payment-ops"></div>
+                <div class="payment-ops">
+                    <div class="payment-input-section">
+                        <div class="checkbox-wrapper">
+                            <div class="round">
+                              <input type="checkbox" id="checkbox" />
+                              <label for="checkbox"></label>
+                            </div>
+                        </div>
+                        <h3>Card</h3>
+                        <div class="checkbox-wrapper">
+                            <div class="round">
+                              <input type="checkbox" id="checkbox-klarna" />
+                              <label for="checkbox-klarna"></label>
+                            </div>
+                        </div>
+                        <h3>Klarna</h3> 
+                        <div class="checkbox-wrapper">
+                            <div class="round">
+                              <input type="checkbox" id="checkbox-paypal" />
+                              <label for="checkbox-paypal"></label>
+                            </div>
+                        </div>
+                        <h3>Paypal</h3> 
+                    </div>
+                </div>
                 <div class="info-box">
                     <div class="legal-stuff-box">
                         <div class="legal-stuff-info">
                             <h3>ETA: xxx</h3>
                             <p> Date: xx/xx - Date xx/xx</p>
                         </div>
-                        <img id="legal-stuff" src="img/legal-stuff.svg" alt="">
+                        <img id="legal-stuff" src="img/payment-info.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -48,13 +72,9 @@
                         <p>Part total: xxx</p>
                         <p>Shipping cost: xxx</p>
                         <h3 id="total">Total: xxx</h3>
-                        <a href="payment.html">
-                            <button id="product-info" type="button">Proceed</button>
+                        <a href="Thank-you.html">
+                            <button id="product-info" type="button">Confirm Payment</button>
                         </a>
-                    </div>
-                    <div class="input-box">
-                        <h3>Discount code</h3>
-                        <input placeholder="Enter code..." type="discount">
                     </div>
                 </div>
             </div>

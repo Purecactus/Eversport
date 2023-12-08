@@ -47,6 +47,22 @@ header{
     font-size: 2rem;
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .main-link:hover {
+    animation: bounce 0.8s;
+  }
+
 .searchbar{
     height: 35px;
     width: 400px;
@@ -182,18 +198,6 @@ h1{
     padding-bottom: 3rem;
 }
 
-@keyframes animate{
-    0%{
-        transform: translateY(0px);
-    }
-    20%{
-        transform: translateY(-20px);
-    }
-    40%,100%{
-        transform: translateY(0px);
-    }
-}
-
 .product-section{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -241,6 +245,10 @@ h1{
         margin: 0rem 5rem 0rem 5rem;
     }
 
+    #viktor{
+        margin-top: 6rem;
+    }
+
     main{
         padding: 0;
     }
@@ -266,6 +274,7 @@ h1{
 
     #viktor{
         padding-bottom: 1rem;
+        margin-top: 0rem;
     }
 
     .product-section{
